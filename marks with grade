@@ -1,0 +1,16 @@
+names=["Srivani","Saniya","Gangothri","Navya","Meghana"]
+marks=[[97,78,89],[88,89,78],[44,78,74],[89,98,90],[89,90,78]]
+pos=1
+for i in range(5):
+    p=sum(marks[i])//3
+    if p>80:
+        g="S"
+    elif p<40:
+        g="F"
+    elif p>40 and p<60:
+        g="B"
+    else:
+        g="A"
+    print("{}.Mr/Mrs {} has scored {}% - {} Grade".format(i+1,names[i].title(),p,g))
+       
+    
